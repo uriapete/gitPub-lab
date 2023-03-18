@@ -12,16 +12,16 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-const PORT:number = 4000;
+const PORT: number = 4000;
 
-app.get("/",(req:Request,res:Response)=>{
+app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to the GitPub App!");
 })
 
-app.get("/drinks",(req:Request,res:Response)=>{
+app.get("/drinks", (req: Request, res: Response) => {
     res.render("drinks_index");
 })
 
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     console.log(`Server now running! Listening on port ${PORT}`);
 })
