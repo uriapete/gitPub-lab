@@ -8,6 +8,8 @@ const ejs = require("ejs");
 const drinkModel = require("./models/drinks");
 const drinks = drinkModel.drinks;
 
+const drinksController = require("./controllers/drinks")
+
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
@@ -18,9 +20,7 @@ app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to the GitPub App!");
 })
 
-app.get("/drinks", (req: Request, res: Response) => {
-    res.render("drinks_index");
-})
+app.use("",drinksController)
 
 app.listen(PORT, () => {
     console.log(`Server now running! Listening on port ${PORT}`);
