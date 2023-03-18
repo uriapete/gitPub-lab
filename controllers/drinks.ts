@@ -13,8 +13,7 @@ router.get("/drinks", (req: Request, res: Response) => {
 
 // show route
 router.get("/drinks/:drinkID", (req: Request, res: Response) => {
-    res.send(req.params.drinkID)
-    // res.render("drinks_index", {drinks});
+    res.render("drinks_show", {drink : drinks[parseInt(req.params.drinkID)]});
 })
 
 module.exports = router;
