@@ -12,7 +12,7 @@
     <h2>
         <%= drink.name %>
     </h2>
-    <img src="<%- drink.image %>" alt="Image of <%= drink.name %>">
+    <img src="<%- drink.image.slice(0, drink.image.length - 4) %>.png" alt="Image of <%= drink.name %>">
     <h3>
         <%= drink.price %>
     </h3>
