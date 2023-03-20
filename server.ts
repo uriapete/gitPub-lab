@@ -23,7 +23,7 @@ app.use(express.static("public"));
 const PORT: number = 4000;
 
 app.get("/", (req: Request, res: Response) => {
-    res.send("Welcome to the GitPub App!");
+    res.render("home");
 })
 
 app.use("", drinksController)
