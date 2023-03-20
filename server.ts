@@ -26,8 +26,8 @@ app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to the GitPub App!");
 })
 
-app.use("",drinksController)
-app.use("",foodController)
+app.use("", drinksController)
+app.use("", foodController)
 
 app.listen(PORT, () => {
     console.log(`Server now running! Listening on port ${PORT}`);
