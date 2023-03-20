@@ -1,5 +1,5 @@
 # gitPub-lab
-A little lab/project demonstrating usage of Express, MVC, EJS, and TypeScript.
+A little lab/project for my class demonstrating usage of Express, MVC, EJS, and TypeScript.
 
 ## Technologies Used
 - TypeScript
