@@ -8,7 +8,13 @@ const ejs = require("ejs");
 const drinkModel = require("./models/drinks");
 const drinks = drinkModel.drinks;
 
-const drinksController = require("./controllers/drinks")
+const drinksController = require("./controllers/drinks");
+
+const foodModel = require("./models/food");
+const food = foodModel.food;
+
+const foodController = require("./controllers/food");
+
 
 app.set("view engine", "ejs");
 
@@ -21,6 +27,7 @@ app.get("/", (req: Request, res: Response) => {
 })
 
 app.use("",drinksController)
+app.use("",foodController)
 
 app.listen(PORT, () => {
     console.log(`Server now running! Listening on port ${PORT}`);
